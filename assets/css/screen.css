@@ -833,13 +833,18 @@ table.plain {
     opacity: 1;
     top: -33px;
 }
-
+.time-on-post{
+        display: block;
+    }
+    .resp{
+        display: none;
+    }
 
 /* ==========================================================================
    9. Media Queries - Smaller than 900px
    ========================================================================== */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
 
     blockquote {
         margin-left: 0;
@@ -863,18 +868,42 @@ table.plain {
         font-size: 1.7rem;
         line-height: 1.5em;
     }
-
+    .time-on-post{
+        display: none;
+    }
+    .resp{
+        display: block;
+        text-align: center;
+    }
+    .tags-on-post{
+        text-align: center;
+    }
+    .post-meta{
+        width: 100%;
+    }
+    .tagoo{
+        display: none;
+    }
     .post {
         font-size: 0.9em;
         line-height: 1.6em;
     }
-
+    .post-title{
+        text-align: center;
+    }
+    .post-content p{
+        font-size: .9em;
+    }
+    .post-excerpt p {
+        font-size: 1.3em;
+    }
     .post-template .post {
         padding-bottom: 1rem;
     }
 
     .post-template .post-header {
         padding: 40px 0;
+        margin-left: 0px;
     }
 
     h1 {
@@ -892,6 +921,10 @@ table.plain {
 
     h4 {
         font-size: 2.8rem;
+    }
+
+    .blog-title ,.blog-description {
+        text-align: center;
     }
 
 }
@@ -949,6 +982,10 @@ table.plain {
         font-size: 2.3rem;
     }
 
+    .blog-title ,.blog-description {
+        text-align: center;
+    }
+
     .post-template .post {
         padding-bottom: 0;
     }
@@ -980,7 +1017,16 @@ table.plain {
     .post-footer .share a {
         margin: 1.4rem 0.8rem 0 0.8rem;
     }
-
+    .post {
+        font-size: 0.7em;
+        line-height: 1.6em;
+    }
+    .post-content p{
+        font-size: .7em;
+    }
+    .post-excerpt p {
+        font-size: 1.3em;
+    }
     .older-posts,
     .newer-posts {
         position: static;
